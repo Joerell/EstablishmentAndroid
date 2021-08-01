@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">EstablishmentAndroid</string>
+    <string name="login_email_hint">Email</string>
+    <string name="login_password_hint">Password</string>
+
+    <string-array name="business_type">
+        <item>Service Business</item>
+        <item>Merchandising Business</item>
+        <item>Manufacturing Business</item>
+    </string-array>
+</resources>
