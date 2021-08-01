@@ -84,6 +84,7 @@
                             android:id="@+id/reg_mobile"
                             style="@style/modifiedEditText"
                             android:hint="Mobile Number"
+                            android:maxLength="11"
                             android:inputType="phone"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
@@ -97,7 +98,7 @@
                             android:id="@+id/address"
                             style="@style/modifiedEditText"
                             android:hint="Address"
-                            android:inputType="phone"
+                            android:inputType="text"
                             android:maxLines="1" />
                     </com.google.android.material.textfield.TextInputLayout>
 

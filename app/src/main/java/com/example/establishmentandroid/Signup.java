@@ -94,7 +94,7 @@ public class Signup extends AppCompatActivity implements AdapterView.OnItemSelec
         String estab_name = regName.getText().toString().trim();
         String estab_mobile = regMobile.getText().toString().trim();
         String estab_address = address.getText().toString().trim();
-        String currentuserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
+
         String user_role = "2";
 
         if (TextUtils.isEmpty(estab_name)) {
@@ -134,6 +134,7 @@ public class Signup extends AppCompatActivity implements AdapterView.OnItemSelec
                         hashMap.put("Contact_No",estab_mobile);
                         hashMap.put("Establishment_Name",estab_name);
                         hashMap.put("User_Role",user_role);
+                        String currentuserId = FirebaseAuth.getInstance().getCurrentUser().getUid();
                         rootDatabaseref.child(currentuserId).updateChildren(hashMap);
                         Toast.makeText(Signup.this, "User Created", Toast.LENGTH_SHORT).show();
                         FirebaseAuth.getInstance().signOut();
